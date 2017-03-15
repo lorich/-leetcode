@@ -11,8 +11,7 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        stackl1=[]
-        stackl2=[]
+        stackl1, stackl2 = [], []
         while l1 != None:
         	stackl1.append(l1.val)
         	l1=l1.next
@@ -34,7 +33,7 @@ class Solution(object):
         return res
 
 def list2ln(listin):
-	head=cur=None
+	head, cur = None, None
 	for i in listin:
 		if head==None:
 			head=ListNode(i)
@@ -43,12 +42,11 @@ def list2ln(listin):
 			cur.next=ListNode(i)
 			cur = cur.next
 	return head
-
-
+    
 
 res=Solution().addTwoNumbers(list2ln([7,2,4,3]), list2ln([5,6,4]))
 while res:
-	print(res.val, end=r'->')
+	print(res.val, end='->')
 	res=res.next
 print()
         
