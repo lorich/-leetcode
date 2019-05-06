@@ -1,0 +1,11 @@
+# test main file
+main.cpp
+
+# build file
+CMakeLists.txt
+
+# build log dir
+cmake-build-debug
+
+# idea
+.idea
